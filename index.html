@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MACHI – Download Installer</title>
+    <style>
+        :root {
+            --bg: hsl(220, 15%, 12%);
+            --card: hsl(220, 15%, 18%);
+            --accent: hsl(170, 80%, 48%);
+            --text: hsl(0, 0%, 95%);
+            --muted: hsl(0, 0%, 70%);
+        }
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+            padding: 2rem 3rem;
+            max-width: 420px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            color: var(--accent);
+        }
+        p { margin: 1rem 0; color: var(--muted); }
+        a.download-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        a.download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        a.download-btn:active { transform: translateY(1px); }
+        .footer { margin-top: 2rem; font-size: 0.85rem; color: var(--muted); }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>MACHI Installer</h1>
+        <p>Download the ready‑to‑run Windows executable for the MACHI AI Voice Assistant.</p>
+        <!-- Adjust the href if your build outputs a different filename/path -->
+        <a class="download-btn" href="dist/Machi/Machi.exe" download="Machi.exe">Download Setup.exe</a>
+        <p class="footer">After downloading, double‑click the file to launch MACHI. No Python installation required.</p>
+    </div>
+</body>
+</html>
